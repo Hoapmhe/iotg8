@@ -12,7 +12,7 @@ document.getElementById("auth-form").addEventListener("submit", function (e) {
     setTimeout(() => {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
       localStorage.setItem("isLoggedIn", "true");
-      window.location.href = "/iotg8/index.html";
+      window.location.href = "../index.html";
     }, 3000);
   } else {
     alert("Sai tài khoản hoặc mật khẩu!");

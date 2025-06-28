@@ -11,12 +11,16 @@
   <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
-  <script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
+    console.log("isLoggedIn = ", isLoggedIn); // Debug
     if (!isLoggedIn || isLoggedIn !== "true") {
-      window.location.href = "form-auth/login.html"; // chuyển hướng nếu chưa login
+      window.location.href = "form-auth/login.html";
     }
-  </script>
+  });
+</script>
+
 </head>
 <body>
   <div class="header">

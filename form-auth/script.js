@@ -21,7 +21,7 @@ document.getElementById("auth-form").addEventListener("submit", function (e) {
   const password = document.getElementById("password").value;
 
   if (isLogin) {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   } else {
     window.location.href = "login.html";
   }

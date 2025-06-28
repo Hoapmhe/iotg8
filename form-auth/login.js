@@ -7,12 +7,11 @@ document.getElementById("auth-form").addEventListener("submit", function (e) {
   const user = users.find(u => u.email === email && u.password === password);
 
   if (user) {
-    // Hiển thị vòng xoay loading
     showLoading();
 
-    // Giả lập loading trong 3 giây, rồi chuyển trang
     setTimeout(() => {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
+      console.log("✅ Redirecting to /iotg8/index.html"); // Debug log
       window.location.href = "/iotg8/index.html";
     }, 3000);
   } else {

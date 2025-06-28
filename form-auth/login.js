@@ -11,7 +11,7 @@ document.getElementById("auth-form").addEventListener("submit", function (e) {
 
     setTimeout(() => {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
-      console.log("✅ Redirecting to /iotg8/index.html"); // Debug log
+      localStorage.setItem("isLoggedIn", "true");
       window.location.href = "/iotg8/index.html";
     }, 3000);
   } else {

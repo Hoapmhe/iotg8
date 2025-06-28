@@ -13,7 +13,7 @@ document.getElementById("auth-form").addEventListener("submit", function (e) {
     // Giả lập loading trong 3 giây, rồi chuyển trang
     setTimeout(() => {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
-      window.location.href = "../index.html";
+      window.location.href = "/iotg8/index.html";
     }, 3000);
   } else {
     alert("Sai tài khoản hoặc mật khẩu!");
